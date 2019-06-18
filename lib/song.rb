@@ -64,7 +64,7 @@ class Song
     song_name = files[1].split(".")[0]
     artist_name = files[0]
 
-    song = Song.new_from_filename(song_name)
+    song = Song.create_by_name(song_name)
     song.artist_name = artist_name
     song
   end
